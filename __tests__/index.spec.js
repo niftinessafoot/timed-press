@@ -1,7 +1,6 @@
 import { jest } from '@jest/globals';
 import { _C } from '../constants';
 import { timedPress } from '../src/index';
-import '@testing-library/jest-dom';
 
 jest.useFakeTimers();
 

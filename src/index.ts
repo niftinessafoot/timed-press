@@ -1,5 +1,3 @@
-import { _C } from '../constants';
-
 /**
  * Config object for {@link timedPress}
  */
@@ -82,7 +80,7 @@ const handleEvent = (evt: MouseEvent) => {
   };
 
   if (!evt) {
-    throw _C.ErrorNoEvent;
+    throw 'Event required';
   }
 
   clearTimeout(timeout);
