@@ -73,10 +73,8 @@ const handleEvent = (evt: MouseEvent) => {
 
   const timeoutAction = () => {
     let duration = 0;
-    // if (timeStart) {
     duration = new Date().getTime() - timeStart;
     timeout = setTimeout(timeoutAction, rate);
-    // }
 
     if (typeof callback === 'function') {
       callback(evt, { duration });
