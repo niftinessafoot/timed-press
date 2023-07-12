@@ -1,8 +1,8 @@
 {
   "name": "@afoot/timed-press",
   "version": "0.1.1",
-  "description": "",
-  "author": "Matthew Smith @niftinessafoot",
+  "description": "Get the length of time a DOM node has been active.",
+  "author": "Matthew Smith <code@niftinessafoot.com> (https://www.niftinessafoot.com)",
   "keywords": [
     "module",
     "typescript"
