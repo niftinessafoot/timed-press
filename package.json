@@ -5,7 +5,9 @@
   "author": "Matthew Smith <code@niftinessafoot.com> (https://www.niftinessafoot.com)",
   "keywords": [
     "module",
-    "typescript"
+    "typescript",
+    "DOM",
+    "events"
   ],
   "entry": "index.ts",
   "license": "MIT",
@@ -26,9 +28,11 @@
   "browserslist": [
     "defaults"
   ],
+  "homepage": "https://github.com/niftinessafoot/timed-press",
+  "bugs": "https://github.com/niftinessafoot/timed-press/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftinessafoot/"
+    "url": "https://github.com/niftinessafoot/timed-press"
   },
   "type": "module",
   "files": [
