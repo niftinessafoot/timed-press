@@ -23,7 +23,8 @@
     "test:coverage": "jest --coverage",
     "docs": "typedoc",
     "prep:umd": "node ./lib/init-umd-config.js",
-    "watch": "nodemon --exec \"npm run build:dev\" --watch src/ -e ts,js"
+    "watch": "nodemon --exec \"npm run build:dev\" --watch src/ -e ts,js",
+    "postversion": "git push && git push --tags"
   },
   "browserslist": [
     "defaults"
