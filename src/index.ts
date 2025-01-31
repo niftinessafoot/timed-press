@@ -43,7 +43,7 @@ const handleTiming = (evt: MouseEvent) => {
   const timeEvent = new MouseEvent(eventName) as TimeEvent;
 
   if (isTrigger) {
-    timeStart = new Date().getTime();
+    timeStart = performance.now();
 
     if (typeof callback === 'function') {
       callback(evt, { duration: 0 });
@@ -52,7 +52,7 @@ const handleTiming = (evt: MouseEvent) => {
     evt.target.dispatchEvent(timeEvent);
   } else {
     if (timeStart) {
-      const duration = new Date().getTime() - timeStart;
+      const duration = performance.now() - timeStart;
 
       timeEvent['duration'] = duration;
       evt.target.dispatchEvent(timeEvent);
@@ -71,7 +71,7 @@ const handleEvent = (evt: MouseEvent) => {
 
   const timeoutAction = () => {
     let duration = 0;
-    duration = new Date().getTime() - timeStart;
+    duration = performance.now() - timeStart;
     timeout = setTimeout(timeoutAction, rate);
 
     if (typeof callback === 'function') {
